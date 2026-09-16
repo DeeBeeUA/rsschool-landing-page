@@ -1,4 +1,12 @@
 
 @use '/src/sass/libs/modern-normalize.scss';
-
 @use '/src/sass/base/base.scss';
+
+
+@use '/src/sass/fonts.scss';
+
+@use '/src/sass/ui/buttons.scss';
+
+// blocks
+@use '/src/sass/block/header.scss';
+@use '/src/sass/block/nav.scss';
