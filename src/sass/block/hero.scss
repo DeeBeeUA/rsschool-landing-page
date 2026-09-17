@@ -1,0 +1,56 @@
+@use '../base/variables.scss' as *;
+
+.hero {
+    padding-top: 20px;
+    &__wrapper {
+        border-radius: 40px;
+        padding: 60px 16px;
+        width: 348px;
+        height: 552px;
+        background-image: url('../../img/img-hero.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    &__title {
+        color: $text-inverse;
+        &__span{
+            color: $text-accent;
+            font-style: italic;
+        }
+    }
+    &__descr {
+        padding-top: 40px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: $text-inverse;
+    }
+    &__btn {
+        display: flex;
+        justify-content: center;
+        margin-top: 39px;
+        &__text {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 150%;
+            text-align: center;
+            color: $text-primary;
+        }
+        &__img {
+            // display: none;
+            max-width: 0;
+            opacity: 0;
+            transform: translateX(-6px);
+            transition: max-width 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
+        }
+        &:hover .hero__btn__img{
+            // display: block;
+            margin-left: 8px;
+            margin-top: 2px;
+            max-width: 20px; // Set to your image's actual width
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+}

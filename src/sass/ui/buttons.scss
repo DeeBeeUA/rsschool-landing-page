@@ -41,3 +41,13 @@
         background-color: $background-container;
     }
 }
+
+.button-primary {
+    border-radius: 100px;
+    padding: 20px 64px;
+    width: 200px;
+    height: 64px;
+    background: $text-inverse;
+    border: none;
+    cursor: pointer;
+}
